@@ -91,6 +91,7 @@ static void datalog_routine (){
 	
 	//open fs
 	f_mount(&FatFs, "", 0);
+	// handle error
 	//open file
 	f_mount(&FatFs, "", 0);
 	if(f_open(&Fil, "config.txt",  FA_WRITE) != FR_OK){
